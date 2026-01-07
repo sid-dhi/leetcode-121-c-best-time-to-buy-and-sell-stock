@@ -20,5 +20,29 @@ Constraints:
 1 <= prices.length <= 105
 0 <= prices[i] <= 104
 
-solution in cpp:
+code solution in cpp:
+
+// LeetCode 121 - Best Time to Buy and Sell Stock
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int minPrice = INT_MAX;
+        int maxProfit = 0;
+        
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+            } else {
+                int profit = price - minPrice;
+                if (profit > maxProfit) {
+                    maxProfit = profit;
+                }
+            }
+        }
+        return maxProfit;
+    }
+};
+
+
 
