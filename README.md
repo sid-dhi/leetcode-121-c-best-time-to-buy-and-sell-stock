@@ -20,8 +20,9 @@ Constraints:
 1 <= prices.length <= 105
 0 <= prices[i] <= 104
 
-code solution in cpp:
+============================================================================================================================
 
+code solution in cpp:
 // LeetCode 121 - Best Time to Buy and Sell Stock
 
 class Solution {
